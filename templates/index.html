@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Chatbot!</h1>
+        <div class="input-container">
+            <input type="text" id="userInput" class="user-input" placeholder="Type your question or press mic icon to speak...">
+            <button onclick="getTextResponse()" class="submit-btn">Submit</button>
+            <img src="{{ url_for('static', filename='mic.png') }}" alt="Microphone" class="mic-icon" onclick="startRecording()">
+        </div>
+        <div id="botResponse"></div>
+        <div id="chatHistory" class="chat-history">
+        </div>
+        
+    </div>
+    <script src="static/script.js"></script>
+</body>
+</html>
