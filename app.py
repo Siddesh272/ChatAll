@@ -12,7 +12,7 @@ app = Flask(__name__)
 chatbot = pipeline("conversational")
 
 faq_responses = {}
-with open("faq_responses.txt", "r") as faq_file:
+with open("static/faq_responses.txt", "r") as faq_file:
     lines = faq_file.readlines()
     for line in lines:
         q, a = line.strip().split("#")
