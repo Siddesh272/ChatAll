@@ -3,5 +3,5 @@ transformers==4.30.2
 sentence-transformers==2.2.2
 SpeechRecognition==3.9.0
 requests==2.31.0
-uwsgi==2.0.23
+uwsgi==2.0.22
 
