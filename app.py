@@ -5,8 +5,10 @@ import json
 from modules.chatbot import text_chatbot, semantic_search, get_response
 from modules.speech import speech_recognition
 from modules.facebook import send_facebook_messenger_message, send_instagram_message
+from flask_compress import Compress
 
 app = Flask(__name__)
+Compress(app)
 
 @app.route("/")
 def index():
