@@ -4,7 +4,7 @@ import speech_recognition as sr
 from transformers import pipeline
 from sentence_transformers import SentenceTransformer, util
 
-chatbot = pipeline("conversational",model="gpt-2.5-turbo")
+chatbot = pipeline("conversational",model="distilbert-base-uncased")
 
 faq_responses = {}
 with open("static/faq_responses.txt", "r") as faq_file:
