@@ -41,4 +41,4 @@ def process_audio():
         return "An error occurred while processing the audio."
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0",port=5000)
