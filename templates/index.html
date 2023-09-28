@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Chatbot</title>
+    <title>ChatAll</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
 </head>
 <body>
+    
     <div class="container">
-        <h1>Welcome to the Chatbot!</h1>
+        <div class="header">
+            <img src="/static/logo.jpg" alt="ChatAll Logo" class="logo-icon">
+            <div>
+                <h1>ChatAll</h1>
+                <p>Get answers to FAQ questions</p>
+            </div>
+        </div>
         <div class="input-container">
             <input type="text" id="userInput" class="user-input" placeholder="Type your question or press mic icon to speak...">
             <button onclick="getTextResponse()" class="submit-btn">Submit</button>

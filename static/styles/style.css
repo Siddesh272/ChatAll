@@ -4,7 +4,38 @@ body {
     padding: 0;
     background-color: #f1f1f1;
 }
-
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+   
+  }
+  
+  .header h1 {
+    font-size: 26px;
+    margin: 0;
+    color: royalblue;
+  }
+  
+  .header p {
+    font-size: 16px;
+    margin: 0;
+    color: grey;
+  }
+  
+  .header img {
+    margin-right: 10px;
+  }
+  .header h1 {
+    font-family: 'Font Awesome', sans-serif;
+  }
+    
+  
+.logo-icon{
+    width: 100px;
+    height: 100px;
+}
 .container {
     max-width: 600px;
     margin: auto;
